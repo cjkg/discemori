@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h3>Unfinished books</h3>
+<h1>unfinished books</h1>
 
 <div id="books">
   <table>
@@ -18,12 +18,14 @@
           <td><%= book.title %></td>
           <td><%= book.pages %></td>
           <td>
-            <%= button_to "Display", {:controller => :books,
-                                      :action => 'show', :id => book.id }, :method => :get %>
             <%= button_to "Remove", {:controller => :books,
-                                     :action => 'destroy', :id => book.id }, :method => :delete %>
+                                      :action => 'destroy', :id => book.id },
+                                      class: "btn btn-danger",
+                                      :method => :delete %>
             <%= button_to "Update", {:controller => :books,
-                                     :action => 'edit', :id => book.id }, :method => :get %>
+                                      :action => 'edit', :id => book.id },
+                                      class: "btn btn-primary",
+                                      :method => :get %>
           </td>
         </tr>
     <% end %>
