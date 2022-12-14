@@ -17,6 +17,14 @@
           <td><%= book.author_last %></td>
           <td><%= book.title %></td>
           <td><%= book.pages %></td>
+          <td>
+            <%= button_to "Display", {:controller => :books,
+                                      :action => 'show', :id => book.id }, :method => :get %>
+            <%= button_to "Remove", {:controller => :books,
+                                     :action => 'destroy', :id => book.id }, :method => :delete %>
+            <%= button_to "Update", {:controller => :books,
+                                     :action => 'edit', :id => book.id }, :method => :get %>
+          </td>
         </tr>
     <% end %>
   </table>
