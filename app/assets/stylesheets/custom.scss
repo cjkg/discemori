@@ -2,7 +2,15 @@
 @import "bootstrap";
 
 /*universal*/
+@font-face {
+  font-family: "PICO-8";
+  src: url("PICO-8.ttf");
+}
+body {
+  background-color: #FFF1E8;
+}
 
-h1 {
-  
+h3 {
+  font-family: "PICO-8";
+  color:  #1D2B53;
 }
