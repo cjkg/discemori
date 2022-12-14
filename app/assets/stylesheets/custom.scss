@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /*universal*/
 @font-face {
@@ -13,4 +14,28 @@ body {
 h1 {
   font-family: "PICO-8";
   color:  #1D2B53;
+}
+
+/*HACK*/
+.button_to,
+.button_to div {
+  display: inline;
+}
+
+.btn-danger, .btn-danger:visited {
+  background-color: #FF004D !important;
+}
+
+.btn-danger:hover, .btn-danger:active {
+  background-color: #CC001A !important;
+}
+
+.btn-primary, .btn-primary:visited {
+  background-color: #29ADFF !important;
+}
+
+
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #065AB5 !important;
 }

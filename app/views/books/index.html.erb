@@ -18,14 +18,14 @@
           <td><%= book.title %></td>
           <td><%= book.pages %></td>
           <td>
-            <%= button_to "Remove", {:controller => :books,
-                                      :action => 'destroy', :id => book.id },
-                                      class: "btn btn-danger",
-                                      :method => :delete %>
-            <%= button_to "Update", {:controller => :books,
-                                      :action => 'edit', :id => book.id },
-                                      class: "btn btn-primary",
-                                      :method => :get %>
+              <%= button_to icon('fa-solid', 'pen'), {:controller => :books,
+                                                      :action => 'edit', :id => book.id },
+                                                      class: "btn btn-primary",
+                                                      :method => :get %>
+              <%= button_to icon('fa-solid', 'trash'), {:controller => :books,
+                                                      :action => 'destroy', :id => book.id },
+                                                      class: "btn btn-danger",
+                                                      :method => :delete %>
           </td>
         </tr>
     <% end %>
