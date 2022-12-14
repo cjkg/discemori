@@ -1,0 +1,20 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+/*universal*/
+@font-face {
+  font-family: "PICO-8";
+  src: url("PICO-8.ttf");
+}
+
+h1 {
+  font-family: "PICO-8";
+  color:  #1D2B53;
+}
+
+/*HACK*/
+.button_to,
+.button_to div {
+  display: inline;
+}
