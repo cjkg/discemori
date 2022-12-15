@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Discemori</title>
+    <title><%= full_title(yield(:title)) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +10,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer class="footer bg-secondary">
+      <div class="container">
+         <span class="text-muted"><q>Heretofore learning was graced by judicious scholars,
+                but now noble sciences are vilified by base and illiterate scribblers,
+                that either write for vain-glory, need, to get money, or as Parasites to
+                flatter and collogue with some great men, they put out trifles, rubbish and trash.</q>
+           <p style="margin-left: 40px">&mdash; Robert Burton, <em>Anatomy of Melancholy</em>, 1652</p>
+           <br>
+           <p>Made with &hearts; by <%= link_to "Christopher Gibilisco", "https://www.github.com/cjkg"%></p>
+          </span>
+      </div>
+    </footer>
+
   </body>
 </html>
