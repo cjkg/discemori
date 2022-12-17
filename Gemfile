@@ -16,6 +16,7 @@ gem "bootsnap",        "1.12.0", require: false
 gem "font-awesome-sass", "~> 6.2.1"
 
 group :development, :test do
+  gem 'rubocop'
   gem "sqlite3", "1.4.2"
   gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
 end
